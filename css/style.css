@@ -59,9 +59,11 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-family: var(--ff-base);
   font-size: 1.4rem;
-  line-height: 1.5;
+  background-color: var(--clr-neutral-off-black);
+  color: var(--clr-neutral-white);
 }
 
 img,
@@ -78,4 +80,74 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links-card {
+  width: 38.4rem;
+  background: var(--clr-neutral-dark-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4rem;
+  border-radius: 1.5rem;
+}
+
+.social-links-card--img {
+  width: 8.8rem;
+  border-radius: 50%;
+}
+
+.social-links-card--text {
+  text-align: center;
+}
+
+.social-links-card--title {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.social-links-card--location {
+  font-weight: 600;
+  color: var(--clr-primary-green);
+  margin-bottom: 2.5rem;
+}
+
+.social-links-card--links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  background: var(--clr-neutral-grey);
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-green);
+  color: var(--clr-neutral-dark-grey);
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+  .social-links-card {
+    width: 32.7rem;
+    padding: 3rem;
+  }
 }
